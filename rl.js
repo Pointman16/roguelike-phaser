@@ -227,15 +227,19 @@ function onKeyUp(event) {
     var acted = false;
     switch (event.keyCode) {
         case Phaser.Keyboard.LEFT:
+        case Phaser.Keyboard.A:
             acted = moveTo(player, DIRECTIONS[0]);
             break;
         case Phaser.Keyboard.RIGHT:
+        case Phaser.Keyboard.D:
             acted = moveTo(player, DIRECTIONS[1]);
             break;
         case Phaser.Keyboard.UP:
+        case Phaser.Keyboard.W:
             acted = moveTo(player, DIRECTIONS[2]);
             break;
         case Phaser.Keyboard.DOWN:
+        case Phaser.Keyboard.S:
             acted = moveTo(player, DIRECTIONS[3]);
             break;
     }
